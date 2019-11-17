@@ -1,6 +1,8 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
 <head>
   <meta charset="utf-8">
   <title>Terrapp</title>
@@ -58,10 +60,9 @@
             <div class="form-group">
               <label for="Type">Type</label>
               <select class="form-control form-control-lg form-control-a" id="Type">
-                <option>All Type</option>
-                <option>For Rent</option>
-                <option>For Sale</option>
-                <option>Open House</option>
+                <option>Todos</option>
+                <option>Renta</option>
+                <option>Venta</option>
               </select>
             </div>
           </div>
@@ -152,7 +153,7 @@
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">¿Quiénes somos?</a>
+            <a class="nav-link" href="about.html">Quienes somos?</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="property-grid.html">Inmuebles</a>
@@ -256,7 +257,7 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a">¿Qué hacemos?</h2>
+              <h2 class="title-a">ï¿½Quï¿½ hacemos?</h2>
             </div>
           </div>
         </div>
@@ -331,7 +332,7 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a">Últimos agregados</h2>
+              <h2 class="title-a">ï¿½ltimos agregados</h2>
             </div>
             <div class="title-link">
               <a href="property-grid.html">Todos los inmuebles
@@ -778,7 +779,7 @@
                     <i class="fa fa-angle-right"></i> <a href="#">Trabaja con nosotros</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Políticas de privacidad</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">Polï¿½ticas de privacidad</a>
                   </li>
                 </ul>
               </div>
@@ -863,7 +864,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
             -->
-            Diseñado por <a href="https://bootstrapmade.com/">Los Barbarillos</a>
+            DiseÃ±ado por <a href="https://bootstrapmade.com/">Los Barbarillos</a>
           </div>
         </div>
       </div>
