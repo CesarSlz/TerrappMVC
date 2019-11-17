@@ -1,31 +1,33 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Terrapp</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="<c:url value="/resources/img/favicon.png" />" rel="icon">
-  <link href="<c:url value="/resources/img/apple-touch-icon.png" />" rel="apple-touch-icon">
+  <link href="<c:url value="/resources/theme1/img/favicon.png" />" rel="icon">
+  <link href="<c:url value="/resources/theme1/img/apple-touch-icon.png" />" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="<c:url value="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="<c:url value="/resources/lib/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
+  <link href="<c:url value="/resources/theme1/lib/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="<c:url value="/resources/lib/font-awesome/css/font-awesome.min.css" />" rel="stylesheet">
-  <link href="<c:url value="/resources/lib/animate/animate.min.css" />" rel="stylesheet">
-  <link href="<c:url value="/resources/lib/ionicons/css/ionicons.min.css" />" rel="stylesheet">
-  <link href="<c:url value="/resources/lib/owlcarousel/assets/owl.carousel.min.css" />" rel="stylesheet">
+  <link href="<c:url value="/resources/theme1/lib/font-awesome/css/font-awesome.min.css" />" rel="stylesheet">
+  <link href="<c:url value="/resources/theme1/lib/animate/animate.min.css" />" rel="stylesheet">
+  <link href="<c:url value="/resources/theme1/lib/ionicons/css/ionicons.min.css" />" rel="stylesheet">
+  <link href="<c:url value="/resources/theme1/lib/owlcarousel/assets/owl.carousel.min.css" />" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-	 <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+	 <link href="<c:url value="/resources/theme1/css/style.css" />" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: EstateAgency
@@ -42,7 +44,7 @@
   <!--/ Form Search Star /-->
   <div class="box-collapse">
     <div class="title-box-d">
-      <h3 class="title-d">Search Property</h3>
+      <h3 class="title-d">Buscar propiedad</h3>
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <div class="box-collapse-wrap form">
@@ -56,32 +58,31 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="Type">Type</label>
+              <label for="Type">Tipo</label>
               <select class="form-control form-control-lg form-control-a" id="Type">
-                <option>All Type</option>
-                <option>For Rent</option>
-                <option>For Sale</option>
-                <option>Open House</option>
+                <option>Todos</option>
+                <option>Renta</option>
+                <option>Venta</option>
               </select>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="city">City</label>
+              <label for="city">Ciudad</label>
               <select class="form-control form-control-lg form-control-a" id="city">
-                <option>All City</option>
-                <option>Alabama</option>
-                <option>Arizona</option>
-                <option>California</option>
-                <option>Colorado</option>
+                <option>Todas las ciudades</option>
+                <option>Ciudad de Mexico</option>
+                <option>Guadalajara</option>
+                <option>Monterrey</option>
+                <option>Tlaxcala</option>
               </select>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="bedrooms">Bedrooms</label>
+              <label for="bedrooms">Habitaciones</label>
               <select class="form-control form-control-lg form-control-a" id="bedrooms">
-                <option>Any</option>
+                <option>Todas</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -90,9 +91,9 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="garages">Garages</label>
+              <label for="garages">Estacionamientos</label>
               <select class="form-control form-control-lg form-control-a" id="garages">
-                <option>Any</option>
+                <option>Todos</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -102,9 +103,9 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="bathrooms">Bathrooms</label>
+              <label for="bathrooms">BaÃ±os</label>
               <select class="form-control form-control-lg form-control-a" id="bathrooms">
-                <option>Any</option>
+                <option>Todos</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -113,9 +114,9 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="price">Min Price</label>
+              <label for="price">Precio minimo</label>
               <select class="form-control form-control-lg form-control-a" id="price">
-                <option>Unlimite</option>
+                <option>Sin limite</option>
                 <option>$50,000</option>
                 <option>$100,000</option>
                 <option>$150,000</option>
@@ -124,7 +125,7 @@
             </div>
           </div>
           <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Search Property</button>
+            <button type="submit" class="btn btn-b">Buscar propiedad</button>
           </div>
         </div>
       </form>
@@ -152,7 +153,7 @@
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">¿Quiénes somos?</a>
+            <a class="nav-link" href="about.html">Â¿QuiÃ©nes somos?</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="property-grid.html">Inmuebles</a>
@@ -176,7 +177,7 @@
   <!--/ Carousel Star /-->
   <div class="intro intro-carousel">
     <div id="carousel" class="owl-carousel owl-theme">
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(resources/img/slide-1.jpg)">
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(resources/theme1/img/slide-1.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -199,7 +200,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(resources/img/slide-2.jpg)">
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(resources/theme1/img/slide-2.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -222,7 +223,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(resources/img/slide-3.jpg)">
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(resources/theme1/img/slide-3.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -256,7 +257,7 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a">¿Qué hacemos?</h2>
+              <h2 class="title-a">Â¿QuÃ© hacemos?</h2>
             </div>
           </div>
         </div>
@@ -331,7 +332,7 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
-              <h2 class="title-a">Últimos agregados</h2>
+              <h2 class="title-a">Ãšltimos agregados</h2>
             </div>
             <div class="title-link">
               <a href="property-grid.html">Todos los inmuebles
@@ -345,7 +346,7 @@
         <div class="carousel-item-b">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="resources/img/property-6.jpg" alt="" class="img-a img-fluid">
+              <img src="resources/theme1/img/property-6.jpg" alt="" class="img-a img-fluid">
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
@@ -392,7 +393,7 @@
         <div class="carousel-item-b">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="resources/img/property-3.jpg" alt="" class="img-a img-fluid">
+              <img src="resources/theme1/img/property-3.jpg" alt="" class="img-a img-fluid">
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
@@ -439,7 +440,7 @@
         <div class="carousel-item-b">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="resources/img/property-7.jpg" alt="" class="img-a img-fluid">
+              <img src="resources/theme1/img/property-7.jpg" alt="" class="img-a img-fluid">
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
@@ -486,7 +487,7 @@
         <div class="carousel-item-b">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="resources/img/property-10.jpg" alt="" class="img-a img-fluid">
+              <img src="resources/theme1/img/property-10.jpg" alt="" class="img-a img-fluid">
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
@@ -556,7 +557,7 @@
         <div class="col-md-4">
           <div class="card-box-d">
             <div class="card-img-d">
-              <img src="resources/img/agent-4.jpg" alt="" class="img-d img-fluid">
+              <img src="resources/theme1/img/agent-4.jpg" alt="" class="img-d img-fluid">
             </div>
             <div class="card-overlay card-overlay-hover">
               <div class="card-header-d">
@@ -615,7 +616,7 @@
         <div class="col-md-4">
           <div class="card-box-d">
             <div class="card-img-d">
-              <img src="resources/img/agent-1.jpg" alt="" class="img-d img-fluid">
+              <img src="resources/theme1/img/agent-1.jpg" alt="" class="img-d img-fluid">
             </div>
             <div class="card-overlay card-overlay-hover">
               <div class="card-header-d">
@@ -674,7 +675,7 @@
         <div class="col-md-4">
           <div class="card-box-d">
             <div class="card-img-d">
-              <img src="resources/img/agent-5.jpg" alt="" class="img-d img-fluid">
+              <img src="resources/theme1/img/agent-5.jpg" alt="" class="img-d img-fluid">
             </div>
             <div class="card-overlay card-overlay-hover">
               <div class="card-header-d">
@@ -778,7 +779,7 @@
                     <i class="fa fa-angle-right"></i> <a href="#">Trabaja con nosotros</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Políticas de privacidad</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">PolÃ­ticas de privacidad</a>
                   </li>
                 </ul>
               </div>
@@ -863,7 +864,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
             -->
-            Diseñado por <a href="https://bootstrapmade.com/">Los Barbarillos</a>
+            DiseÃ±ado por <a href="https://bootstrapmade.com/">Los Barbarillos</a>
           </div>
         </div>
       </div>
@@ -875,19 +876,19 @@
   <div id="preloader"></div>
 
    <!-- JavaScript Libraries -->
-  <script src="<c:url value="/resources/lib/jquery/jquery.min.js" />"></script>
-  <script src="<c:url value="/resources/lib/jquery/jquery-migrate.min.js" />"></script>
-  <script src="<c:url value="/resources/lib/popper/popper.min.js" />"></script>
-  <script src="<c:url value="/resources/lib/bootstrap/js/bootstrap.min.js" />"></script>
-  <script src="<c:url value="/resources/lib/easing/easing.min.js" />"></script>
-  <script src="<c:url value="/resources/lib/owlcarousel/owl.carousel.min.js" />"></script>
-  <script src="<c:url value="/resources/lib/scrollreveal/scrollreveal.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/jquery/jquery.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/jquery/jquery-migrate.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/popper/popper.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/bootstrap/js/bootstrap.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/easing/easing.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/owlcarousel/owl.carousel.min.js" />"></script>
+  <script src="<c:url value="/resources/theme1/lib/scrollreveal/scrollreveal.min.js" />"></script>
     
     <!-- Contact Form JavaScript File -->
-  <script src="<c:url value="/resources/contactform/contactform.js" />"></script>
+  <script src="<c:url value="/resources/theme1/contactform/contactform.js" />"></script>
  
 <!-- Template Main Javascript File -->
-<script src="<c:url value="/resources/js/main.js" />"></script>
+<script src="<c:url value="/resources/theme1/js/main.js" />"></script>
 
 </body>
 </html>
