@@ -24,4 +24,12 @@ public class TerrappController {
 		return model;
 
 	}
+	@RequestMapping(value = "/inmobiliaria", method = RequestMethod.GET)
+	public ModelAndView getData3() {
+
+		ModelAndView model = new ModelAndView("inmobiliaria");
+
+		return model;
+
+	}
 }

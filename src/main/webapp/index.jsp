@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
 <head>
   <meta charset="UTF-8">
   <title>Terrapp</title>
@@ -153,7 +153,11 @@
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link" href="about.html">¿Quiénes somos?</a>
+=======
+            <a class="nav-link" href="about.html">Quienes somos?</a>
+>>>>>>> Vista_propiedad
           </li>
           <li class="nav-item">
             <a class="nav-link" href="property-grid.html">Inmuebles</a>
@@ -257,7 +261,11 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
+<<<<<<< HEAD
               <h2 class="title-a">¿Qué hacemos?</h2>
+=======
+              <h2 class="title-a">�Qu� hacemos?</h2>
+>>>>>>> Vista_propiedad
             </div>
           </div>
         </div>
@@ -332,7 +340,11 @@
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
+<<<<<<< HEAD
               <h2 class="title-a">Últimos agregados</h2>
+=======
+              <h2 class="title-a">�ltimos agregados</h2>
+>>>>>>> Vista_propiedad
             </div>
             <div class="title-link">
               <a href="property-grid.html">Todos los inmuebles
@@ -779,7 +791,11 @@
                     <i class="fa fa-angle-right"></i> <a href="#">Trabaja con nosotros</a>
                   </li>
                   <li class="item-list-a">
+<<<<<<< HEAD
                     <i class="fa fa-angle-right"></i> <a href="#">Políticas de privacidad</a>
+=======
+                    <i class="fa fa-angle-right"></i> <a href="#">Pol�ticas de privacidad</a>
+>>>>>>> Vista_propiedad
                   </li>
                 </ul>
               </div>
