@@ -7,8 +7,10 @@
 <meta charset="UTF-8">
 <title>Inmobiliaria</title>
 <!-- Favicons -->
-<link href="<c:url value="/resources/img/favicon.png" />" rel="icon">
-<link href="<c:url value="/resources/img/apple-touch-icon.png" />"
+<link href="<c:url value="/resources/theme1/img/favicon.png" />"
+	rel="icon">
+<link
+	href="<c:url value="/resources/theme1/img/apple-touch-icon.png" />"
 	rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -18,24 +20,29 @@
 
 <!-- Bootstrap CSS File -->
 <link
-	href="<c:url value="/resources/lib/bootstrap/css/bootstrap.min.css" />"
+	href="<c:url value="/resources/theme1/lib/bootstrap/css/bootstrap.min.css" />"
 	rel="stylesheet">
 
 <!-- Libraries CSS Files -->
 <link
-	href="<c:url value="/resources/lib/font-awesome/css/font-awesome.min.css" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/lib/animate/animate.min.css" />"
+	href="<c:url value="/resources/theme1/lib/font-awesome/css/font-awesome.min.css" />"
 	rel="stylesheet">
 <link
-	href="<c:url value="/resources/lib/ionicons/css/ionicons.min.css" />"
+	href="<c:url value="/resources/theme1/lib/animate/animate.min.css" />"
 	rel="stylesheet">
 <link
-	href="<c:url value="/resources/lib/owlcarousel/assets/owl.carousel.min.css" />"
+	href="<c:url value="/resources/theme1/lib/ionicons/css/ionicons.min.css" />"
+	rel="stylesheet">
+<link
+	href="<c:url value="/resources/theme1/lib/owlcarousel/assets/owl.carousel.min.css" />"
 	rel="stylesheet">
 
 <!-- Main Stylesheet File -->
-<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/theme1/css/style.css" />"
+	rel="stylesheet">
+
+<link href="<c:url value="/resources/theme1/css/main.css" />"
+	rel="stylesheet">
 
 <!-- =======================================================
     Theme Name: EstateAgency
@@ -415,22 +422,26 @@
 	<!--/ Footer End /-->
 
 	<!-- JavaScript Libraries -->
-	<script src="<c:url value="/resources/lib/jquery/jquery.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/jquery/jquery-migrate.min.js" />"></script>
-	<script src="<c:url value="/resources/lib/popper/popper.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/jquery/jquery.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/bootstrap/js/bootstrap.min.js" />"></script>
-	<script src="<c:url value="/resources/lib/easing/easing.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/jquery/jquery-migrate.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/owlcarousel/owl.carousel.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/popper/popper.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/scrollreveal/scrollreveal.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/bootstrap/js/bootstrap.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/lib/easing/easing.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/lib/owlcarousel/owl.carousel.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/lib/scrollreveal/scrollreveal.min.js" />"></script>
 
 	<!-- Contact Form JavaScript File -->
-	<script src="<c:url value="/resources/contactform/contactform.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/contactform/contactform.js" />"></script>
 
 	<!-- Template Main Javascript File -->
-	<script src="<c:url value="/resources/js/main.js" />"></script>
+	<script src="<c:url value="/resources/theme1/js/main.js" />"></script>
 </body>
 </html>

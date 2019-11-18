@@ -1,13 +1,15 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="UTF-8">
 <head>
 <title>Propiedad</title>
 <!-- Favicons -->
-<link href="<c:url value="/resources/img/favicon.png" />" rel="icon">
-<link href="<c:url value="/resources/img/apple-touch-icon.png" />"
+<link href="<c:url value="/resources/theme1/img/favicon.png" />"
+	rel="icon">
+<link
+	href="<c:url value="/resources/theme1/img/apple-touch-icon.png" />"
 	rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -17,24 +19,29 @@
 
 <!-- Bootstrap CSS File -->
 <link
-	href="<c:url value="/resources/lib/bootstrap/css/bootstrap.min.css" />"
+	href="<c:url value="/resources/theme1/lib/bootstrap/css/bootstrap.min.css" />"
 	rel="stylesheet">
 
 <!-- Libraries CSS Files -->
 <link
-	href="<c:url value="/resources/lib/font-awesome/css/font-awesome.min.css" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/lib/animate/animate.min.css" />"
+	href="<c:url value="/resources/theme1/lib/font-awesome/css/font-awesome.min.css" />"
 	rel="stylesheet">
 <link
-	href="<c:url value="/resources/lib/ionicons/css/ionicons.min.css" />"
+	href="<c:url value="/resources/theme1/lib/animate/animate.min.css" />"
 	rel="stylesheet">
 <link
-	href="<c:url value="/resources/lib/owlcarousel/assets/owl.carousel.min.css" />"
+	href="<c:url value="/resources/theme1/lib/ionicons/css/ionicons.min.css" />"
+	rel="stylesheet">
+<link
+	href="<c:url value="/resources/theme1/lib/owlcarousel/assets/owl.carousel.min.css" />"
 	rel="stylesheet">
 
 <!-- Main Stylesheet File -->
-<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/theme1/css/style.css" />"
+	rel="stylesheet">
+
+<link href="<c:url value="/resources/theme1/css/main.css" />"
+	rel="stylesheet">
 
 <!-- =======================================================
     Theme Name: EstateAgency
@@ -86,13 +93,13 @@
 					<div id="property-single-carousel"
 						class="owl-carousel owl-arrow gallery-property">
 						<div class="carousel-item-b">
-							<img src="/resources/img/slide-2.jpg" alt="">
+							<img src="/resources/theme1/img/slide-2.jpg" alt="">
 						</div>
 						<div class="carousel-item-b">
-							<img src="/resources/img/slide-3.jpg" alt="">
+							<img src="/resources/theme1/img/slide-3.jpg" alt="">
 						</div>
 						<div class="carousel-item-b">
-							<img src="/resources/img/slide-1.jpg" alt="">
+							<img src="/resources/theme1/img/slide-1.jpg" alt="">
 						</div>
 					</div>
 					<div class="row justify-content-between">
@@ -207,7 +214,8 @@
 						</div>
 						<div class="tab-pane fade" id="pills-plans" role="tabpanel"
 							aria-labelledby="pills-plans-tab">
-							<img src="/resources/img/plan2.jpg" alt="" class="img-fluid">
+							<img src="/resources/theme1/img/plan2.jpg" alt=""
+								class="img-fluid">
 						</div>
 						<div class="tab-pane fade" id="pills-map" role="tabpanel"
 							aria-labelledby="pills-map-tab">
@@ -228,7 +236,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-lg-4">
-							<img src="/resources/img/agent-4.jpg" alt="" class="img-fluid">
+							<img src="/resources/theme1/img/agent-4.jpg" alt=""
+								class="img-fluid">
 						</div>
 						<div class="col-md-6 col-lg-4">
 							<div class="property-agent">
@@ -313,23 +322,27 @@
 	<div id="preloader"></div>
 
 	<!-- JavaScript Libraries -->
-	<script src="<c:url value="/resources/lib/jquery/jquery.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/jquery/jquery-migrate.min.js" />"></script>
-	<script src="<c:url value="/resources/lib/popper/popper.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/jquery/jquery.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/bootstrap/js/bootstrap.min.js" />"></script>
-	<script src="<c:url value="/resources/lib/easing/easing.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/jquery/jquery-migrate.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/owlcarousel/owl.carousel.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/popper/popper.min.js" />"></script>
 	<script
-		src="<c:url value="/resources/lib/scrollreveal/scrollreveal.min.js" />"></script>
+		src="<c:url value="/resources/theme1/lib/bootstrap/js/bootstrap.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/lib/easing/easing.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/lib/owlcarousel/owl.carousel.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/lib/scrollreveal/scrollreveal.min.js" />"></script>
 
 	<!-- Contact Form JavaScript File -->
-	<script src="<c:url value="/resources/contactform/contactform.js" />"></script>
+	<script
+		src="<c:url value="/resources/theme1/contactform/contactform.js" />"></script>
 
 	<!-- Template Main Javascript File -->
-	<script src="<c:url value="/resources/js/main.js" />"></script>
+	<script src="<c:url value="/resources/theme1/js/main.js" />"></script>
 
 </body>
 </html>
