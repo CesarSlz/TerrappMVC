@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+
 	<div class="click-closed"></div>
 	<!--/ Form Search Star /-->
 	<div class="box-collapse">
@@ -79,9 +80,9 @@
 					</div>
 					<div class="col-md-6 mb-2">
 						<div class="form-group">
-							<label for="price">Precio maximo</label> <select
+							<label for="price">Precio máximo</label> <select
 								class="form-control form-control-lg form-control-a" id="price">
-								<option>Sin limite</option>
+								<option>Sin límite</option>
 								<option>$5,000,000</option>
 								<option>$10,000,000</option>
 								<option>$15,000,000</option>
@@ -109,6 +110,7 @@
 		</div>
 	</div>
 	<!--/ Form Search End /-->
+	
 	 <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
@@ -118,7 +120,6 @@
         <span></span>
         <span></span>
       </button>
-      
       
       
       <a class="navbar-brand text-brand" href="index.jsp"><span class=""><div class="card"><img src="resources/theme1/img/logo_verde.png" alt="Card Back"><img src="resources/theme1/img/logo_cafe.png" class="img-top" alt="Card Front"></div> TERRA<span class="color-b">pp</span></a></span>
@@ -141,7 +142,7 @@
             <a class="nav-link" href="inmobiliaria">Inmobiliarias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html" style="color: #81BE1C;">Ingresar</a>
+            <a class="nav-link" class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".log-sign" style="color: #81BE1C">Ingresar</a>
           </li>
         </ul>
       </div>
@@ -151,4 +152,141 @@
       </button>
     </div>
   </nav>
+  
   <!--/ Nav End /-->
+
+<!-- Modal -->
+<div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+              <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+              
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+       
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+              
+               <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email address</label></div>
+              
+              
+            <!-- Password input-->
+            <div class="group">
+<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Password</label>
+    </div>
+<em>minimum 6 characters</em>
+
+           <div class="forgot-link">
+            <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+            </div>
+            
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+          
+          
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">First Name</label></div>
+            
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Last Name</label></div>
+            
+            <!-- Password input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email</label></div>
+            
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Password</label></div>
+              <em>1-8 Characters</em>
+            
+              <div class="group2">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Country</label></div>
+            
+            
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <!--<div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>-->
+    </div>
+  </div>
+</div>
+  
+   
+
+<!--modal2-->
+
+<div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+        <fieldset>
+        <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email address</label></div>
+        
+        
+        <div class="control-group">
+              <label class="control-label" for="forpassword"></label>
+              <div class="controls">
+                <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+              </div>
+            </div>
+          </fieldset>
+            </form>
+          
+      </div>
+    </div>
+    
+  </div>
+</div>
