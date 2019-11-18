@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-=======
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
->>>>>>> Vista_propiedad
 <!DOCTYPE html>
 <html lang="UTF-8">
 <head>
@@ -313,7 +307,7 @@
 	</section>
 	<!--/ Property Single End /-->
 	<!-- Footer start -->
-<div><jsp:include page="Footer.jsp" /></div>
+	<div><jsp:include page="Footer.jsp" /></div>
 	<!-- Footer ends-->
 	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 	<div id="preloader"></div>

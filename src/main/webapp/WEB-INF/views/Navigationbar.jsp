@@ -1,52 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<!-- Favicons -->
-<link href="<c:url value="/resources/img/favicon.png" />" rel="icon">
-<link href="<c:url value="/resources/img/apple-touch-icon.png" />"
-	rel="apple-touch-icon">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
-<!-- Google Fonts -->
-<link
-	href="<c:url value="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />"
-	rel="stylesheet">
-
-<!-- Bootstrap CSS File -->
-<link
-	href="<c:url value="/resources/lib/bootstrap/css/bootstrap.min.css" />"
-	rel="stylesheet">
-
-<!-- Libraries CSS Files -->
-<link
-	href="<c:url value="/resources/lib/font-awesome/css/font-awesome.min.css" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/lib/animate/animate.min.css" />"
-	rel="stylesheet">
-<link
-	href="<c:url value="/resources/lib/ionicons/css/ionicons.min.css" />"
-	rel="stylesheet">
-<link
-	href="<c:url value="/resources/lib/owlcarousel/assets/owl.carousel.min.css" />"
-	rel="stylesheet">
-
-<!-- Main Stylesheet File -->
-<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-
-<!-- =======================================================
-    Theme Name: EstateAgency
-    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-<link
-	href="<c:url value="https://fonts.googleapis.com/css?family=Exo&display=swap" />"
-	rel="stylesheet">
-
-</head>
-<body>
 	<div class="click-closed"></div>
 	<!--/ Form Search Star /-->
 	<div class="box-collapse">
@@ -137,7 +91,7 @@
 					</div>
 					<div class="col-md-6 mb-2">
 						<div class="form-group">
-							<label for="bathrooms">Baños</label> <select
+							<label for="bathrooms">BaÃ±os</label> <select
 								class="form-control form-control-lg form-control-a"
 								id="bathrooms">
 								<option>Todos</option>
@@ -195,24 +149,3 @@
     </div>
   </nav>
   <!--/ Nav End /-->
-		<!-- JavaScript Libraries -->
-	<script src="<c:url value="/resources/lib/jquery/jquery.min.js" />"></script>
-	<script
-		src="<c:url value="/resources/lib/jquery/jquery-migrate.min.js" />"></script>
-	<script src="<c:url value="/resources/lib/popper/popper.min.js" />"></script>
-	<script
-		src="<c:url value="/resources/lib/bootstrap/js/bootstrap.min.js" />"></script>
-	<script src="<c:url value="/resources/lib/easing/easing.min.js" />"></script>
-	<script
-		src="<c:url value="/resources/lib/owlcarousel/owl.carousel.min.js" />"></script>
-	<script
-		src="<c:url value="/resources/lib/scrollreveal/scrollreveal.min.js" />"></script>
-
-	<!-- Contact Form JavaScript File -->
-	<script src="<c:url value="/resources/contactform/contactform.js" />"></script>
-
-	<!-- Template Main Javascript File -->
-	<script src="<c:url value="/resources/js/main.js" />"></script>
-	
-</body>
-</html>
