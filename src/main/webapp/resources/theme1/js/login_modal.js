@@ -12,13 +12,12 @@ $(window, document, undefined).ready(function() {
 
 
 $('#tab1').on('click' , function(){
-    $('#tab1').addClass('login-shadow');
-   $('#tab2').removeClass('signup-shadow');
+    $('#tab1').addClass('login-shadow', 'btnpresionado');
+   $('#tab2').removeClass('signup-shadow', 'btnpresionado');
 });
 
 $('#tab2').on('click' , function(){
-    $('#tab2').addClass('signup-shadow');
-   $('#tab1').removeClass('login-shadow');
-
+    $('#tab2').addClass('signup-shadow', 'btnpresionado');
+   $('#tab1').removeClass('login-shadow', 'btnpresionado');
 
 });
