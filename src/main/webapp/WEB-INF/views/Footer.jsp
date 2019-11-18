@@ -44,7 +44,7 @@
                     <i class="fa fa-angle-right"></i> <a href="#">Trabaja con nosotros</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Pol�ticas de privacidad</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">Políticas de privacidad</a>
                   </li>
                 </ul>
               </div>

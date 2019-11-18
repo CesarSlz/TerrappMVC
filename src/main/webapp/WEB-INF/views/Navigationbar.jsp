@@ -118,7 +118,10 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.jsp">TERRA<span class="color-b">pp</span></a>
+      
+      
+      
+      <a class="navbar-brand text-brand" href="index.jsp"><span class=""><div class="card"><img src="resources/theme1/img/logo_verde.png" alt="Card Back"><img src="resources/theme1/img/logo_cafe.png" class="img-top" alt="Card Front"></div> TERRA<span class="color-b">pp</span></a></span>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -129,13 +132,13 @@
             <a class="nav-link" href="index.jsp">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Quienes somos?</a>
+            <a class="nav-link" href="nosotros">¿Quiénes somos?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="property.jsp">Inmuebles</a>
+            <a class="nav-link" href="inmueble">Inmuebles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="inmobiliaria.jsp">Inmobiliarias</a>
+            <a class="nav-link" href="inmobiliaria">Inmobiliarias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html" style="color: #81BE1C;">Ingresar</a>

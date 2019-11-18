@@ -16,10 +16,10 @@ public class TerrappController {
 		return model;
 	}
 
-	@RequestMapping(value = "/property", method = RequestMethod.GET)
+	@RequestMapping(value = "/inmueble", method = RequestMethod.GET)
 	public ModelAndView getData2() {
 
-		ModelAndView model = new ModelAndView("property");
+		ModelAndView model = new ModelAndView("inmueble");
 
 		return model;
 
@@ -28,6 +28,14 @@ public class TerrappController {
 	public ModelAndView getData3() {
 
 		ModelAndView model = new ModelAndView("inmobiliaria");
+
+		return model;
+
+	}
+	@RequestMapping(value = "/nosotros", method = RequestMethod.GET)
+	public ModelAndView getData4() {
+
+		ModelAndView model = new ModelAndView("nosotros");
 
 		return model;
 
