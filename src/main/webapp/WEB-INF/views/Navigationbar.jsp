@@ -121,12 +121,12 @@
 
 
 
-		<a class="navbar-brand text-brand" href="index.jsp"><span class=""><div
-					class="card">
-					<img src="resources/theme1/img/logo_verde.png" alt="Card Back"><img
-						src="resources/theme1/img/logo_cafe.png" class="img-top"
-						alt="Card Front">
-				</div> TERRA<span class="color-b">pp</span></a></span>
+		<a class="navbar-brand text-brand" href="/terrapp"> <span
+			class="card"> <img class="logo" src="resources/theme1/img/logo_cafe.png"
+				alt="Card Back"> <img src="resources/theme1/img/logo_verde.png"
+				class="logo img-top" alt="Card Front"> TERRA<span class="color-b2">pp</span>
+		</span>
+		</a>
 		<button type="button"
 			class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
 			data-toggle="collapse" data-target="#navbarTogglerDemo01"

@@ -81,10 +81,14 @@ a:hover {
 }
 
 .text-brand {
-  color: #543b23;
+  color: #81be1c;
   font-size: 2rem;
   font-family: "Exo", sans-serif;
   font-weight: 600;
+}
+
+.text-brand:hover{
+	color:#543b23;
 }
 
 .color-a {
@@ -93,6 +97,19 @@ a:hover {
 
 .color-b {
   color: #81be1c;
+}
+
+.color-b2 {
+  color: #543b23;
+  -webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+.text-brand:hover .color-b2 {
+  color: #81be1c;
+ 
 }
 
 .color-d {
@@ -654,7 +671,11 @@ a:hover {
 }
 
 .navbar-default.navbar-reduce .navbar-brand {
-  color: #543B23;
+  color: #81be1c;
+}
+
+.navbar-default.navbar-reduce:hover .navbar-brand {
+  color: #543b23;
 }
 
 .navbar-default .dropdown .dropdown-menu {
