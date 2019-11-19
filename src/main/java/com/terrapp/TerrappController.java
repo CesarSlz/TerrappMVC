@@ -23,8 +23,7 @@ public class TerrappController {
 	}
 
 	@RequestMapping(value = "/inmuebles", method = RequestMethod.GET)
-	public ModelAndView obtenerInmueble() {
-		System.out.println("si entro inmueble");
+	public ModelAndView obtenerInmuebles() {
 		ApiManager api = new ApiManager();
 
 		Propiedad p = (Propiedad) api.obtenerObjetos("propiedades", new Propiedad()).get(0);
@@ -35,6 +34,15 @@ public class TerrappController {
 
 		ModelAndView model = new ModelAndView("inmuebles");
 		model.addObject("propiedad", p);
+
+		return model;
+
+	}
+
+	@RequestMapping(value = "/inmueble", method = RequestMethod.GET)
+	public ModelAndView obtenerInmueble() {
+
+		ModelAndView model = new ModelAndView("inmueble");
 
 		return model;
 

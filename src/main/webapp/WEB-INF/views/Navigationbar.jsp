@@ -139,7 +139,7 @@
 				<li class="nav-item"><a class="nav-link" href="/terrapp">Inicio</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="nosotros">Nosotros</a></li>
-				<li class="nav-item"><a class="nav-link" href="inmueble">Inmuebles</a>
+				<li class="nav-item"><a class="nav-link" href="inmuebles">Inmuebles</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="inmobiliaria">Inmobiliarias</a>
 				</li>
