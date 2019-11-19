@@ -1,6 +1,7 @@
 package com.terrapp.models;
 
 import java.util.Date;
+import java.util.Set;
 
 public class Propiedad {
 
@@ -14,6 +15,13 @@ public class Propiedad {
 	private String areaTerreno;
 	private String areaConstruccion;
 	private boolean eliminado;
+	private Set<Fotos> fotos;
+	private AreasCompartidas areasCompartidas;
+	private Caracteristicas caracteristicas;
+	private Servicios servicios;
+	private Casa casa;
+	private Departamento departamento;
+	private Terreno terreno;
 	private Date fechaCreacion;
 	private Date fechaEliminacion;
 	private Date fechaModificacion;
@@ -141,6 +149,62 @@ public class Propiedad {
 
 	public void setEstatus(String estatus) {
 		this.estatus = estatus;
+	}
+
+	public Set<Fotos> getFotos() {
+		return fotos;
+	}
+
+	public void setFotos(Set<Fotos> fotos) {
+		this.fotos = fotos;
+	}
+
+	public AreasCompartidas getAreasCompartidas() {
+		return areasCompartidas;
+	}
+
+	public void setAreasCompartidas(AreasCompartidas areasCompartidas) {
+		this.areasCompartidas = areasCompartidas;
+	}
+
+	public Caracteristicas getCaracteristicas() {
+		return caracteristicas;
+	}
+
+	public void setCaracteristicas(Caracteristicas caracteristicas) {
+		this.caracteristicas = caracteristicas;
+	}
+
+	public Servicios getServicios() {
+		return servicios;
+	}
+
+	public void setServicios(Servicios servicios) {
+		this.servicios = servicios;
+	}
+
+	public Casa getCasa() {
+		return casa;
+	}
+
+	public void setCasa(Casa casa) {
+		this.casa = casa;
+	}
+
+	public Departamento getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(Departamento departamento) {
+		this.departamento = departamento;
+	}
+
+	public Terreno getTerreno() {
+		return terreno;
+	}
+
+	public void setTerreno(Terreno terreno) {
+		this.terreno = terreno;
 	}
 
 }
