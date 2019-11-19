@@ -1,217 +1,221 @@
-.tab-style{
-font-size:20px;
-width:50%;
-background-color:#f2f2f2;
-  text-align:center;
-  
-
+.tab-style {
+  font-size: 20px;
+  width: 50%;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 .nav-tabs > li > a {
-    margin-right: 0px;
-    color:#543B23;
-    background-color:#DFDFD4;
+  margin-right: 0px;
+  color: #543b23;
+  background-color: #dfdfd4;
 }
 
-
-
-.group2 { 
-	position: relative; 
-	margin-top: 16px; 
+.group2 {
+  position: relative;
+  margin-top: 16px;
 }
 
-.btn-block{margin-top:20px;
-margin-bottom:20px;
-font-size:18px;}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {   background-color:#DFDFD4;
-color:#543B23;}
-
-
-.login-shadow{-webkit-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
--moz-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
-  z-index:1;
-   
+.btn-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
-.signup-shadow{-webkit-box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
--moz-box-shadow: -5px -5px 6px 0px rgba(82,82,82,0.52);
-box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
-
-  
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #dfdfd4;
+  color: #543b23;
 }
 
-
-.modal-header{background-color:#e5ecf4;}
-
-.group { 
-	position: relative; 
-	margin-top: 30px; 
+.login-shadow {
+  -webkit-box-shadow: 5px -5px 6px 0px rgba(82, 82, 82, 0.52);
+  -moz-box-shadow: 5px -5px 6px 0px rgba(82, 82, 82, 0.52);
+  box-shadow: 5px -5px 6px 0px rgba(82, 82, 82, 0.52);
+  z-index: 1;
 }
 
+.signup-shadow {
+  -webkit-box-shadow: -5px 0px 6px 0px rgba(82, 82, 82, 0.52);
+  -moz-box-shadow: -5px -5px 6px 0px rgba(82, 82, 82, 0.52);
+  box-shadow: -5px 0px 6px 0px rgba(82, 82, 82, 0.52);
+}
+
+.modal-header {
+  background-color: #e5ecf4;
+}
+
+.group {
+  position: relative;
+  margin-top: 30px;
+}
 
 .input {
-	font-size: 18px;
-	padding: 10px 10px 10px 5px;
-	-webkit-appearance: none;
-	display: block;
-	background: none;
-	color: #636363;
-	width: 100%;
-	border: none;
-	border-radius: 0;
-	border-bottom: 1px solid #757575;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  background: none;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
 }
 
-.input:focus { outline: none; }
-
+.input:focus {
+  outline: none;
+}
 
 /* Label */
 
 .label {
-	color: #757575; 
-	font-size: 18px;
-	font-weight: normal;
-	position: absolute;
-	pointer-events: none;
-	left: 0px;
-	top: 10px;
-	transition: all 0.2s ease;
+  color: #757575;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0px;
+  top: 10px;
+  transition: all 0.2s ease;
 }
-
 
 /* active */
 
-.input:focus ~ .label, .input.used ~ .label {
-	top: -20px;
-  transform: scale(.75); left:-15px;
-	/* font-size: 14px; */
-	color: #81BE1C;
+.input:focus ~ .label,
+.input.used ~ .label {
+  top: -20px;
+  transform: scale(0.75);
+  left: -15px;
+  /* font-size: 14px; */
+  color: #81be1c;
 }
-
 
 /* Underline */
 
 .bar {
-	position: relative;
-	display: block;
-	width: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
 }
 
-.bar:before, .bar:after {
-	content: '';
-	height: 2px; 
-	width: 0;
-	bottom: 1px; 
-	position: absolute;
-	background: #81BE1C; 
-	transition: all 0.2s ease;
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #81be1c;
+  transition: all 0.2s ease;
 }
 
-.bar:before { left: 50%; }
+.bar:before {
+  left: 50%;
+}
 
-.bar:after { right: 50%; }
-
+.bar:after {
+  right: 50%;
+}
 
 /* active */
 
-.input:focus ~ .bar:before, .input:focus ~ .bar:after { width: 50%; }
-
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
 
 /* Highlight */
 
 .highlight {
-	position: absolute;
-	height: 60%; 
-	width: 100px; 
-	top: 25%; 
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
 }
-
 
 /* active */
 
 .input:focus ~ .highlight {
-	animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
 
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  #myModal {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 
-@media  screen and (max-width: 767px) and (min-width: 576px){
-  #myModal{margin-left:20%;
-            margin-right:20%;}
-
-  #forgot-password{margin-left:20%;
-            margin-right:20%;}
-} 
-
+  #forgot-password {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
 
 @media screen and (min-width: 768px) {
-	
-	#myModal .modal-dialog  {width:500px;}
-  
-  #forgot-password .modal-dialog{width:500px;}
-  
-  .modal-body{padding-left:50px;
-              padding-right:50px;}
+  #myModal .modal-dialog {
+    width: 500px;
+  }
+
+  #forgot-password .modal-dialog {
+    width: 500px;
+  }
+
+  .modal-body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
-
 .modal-content {
-    width: 600hw;
-
+  width: 600hw;
 }
 
 .modal-sm {
-    max-width: 600hw;
+  max-width: 600hw;
 }
 
-
-elemento {
-
-}
 #myModal .modal-dialog {
-
-    width: 600hw;
-
+  width: 600hw;
 }
 
 .modal-dialog {
-    max-width: 600px;
-    margin-top: 7.10rem;
-     margin-right: auto;
-      margin-left: auto;
-    
+  max-width: 600px;
+  margin-top: 7.1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-
-em{display:none;}
+em {
+  display: none;
+}
 
 .loginbtn {
- text-decoration: none;
- display: block;
- width: 100%;
- height: 100%;
- 
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.btnpresionado{
-	background-color:#81BE1C;
-	text-decoration: none;
- 	display: block;
- 	width: 100%;
- 	height: 100%;
+.btnpresionado {
+  background-color: #81be1c;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .btn-verde {
-	color: #fff;
-	background-color:#81BE1C;
-	border-color:#81BE1C;
+  color: #fff;
+  background-color: #81be1c;
+  border-color: #81be1c;
 }
 
 .btn-verde:hover {
-	color: #fff;
-	background-color:#543B23;
-	border-color:#543B23;
+  color: #fff;
+  background-color: #543b23;
+  border-color: #543b23;
 }
