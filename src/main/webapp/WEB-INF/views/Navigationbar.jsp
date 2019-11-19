@@ -140,7 +140,7 @@
 				</li>
 				<li class="nav-item"><a class="nav-link" href="nosotros">¿Quiénes
 						somos?</a></li>
-				<li class="nav-item"><a class="nav-link" href="inmueble">Inmuebles</a>
+				<li class="nav-item"><a class="nav-link" href="inmuebles">Inmuebles</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="inmobiliaria">Inmobiliarias</a>
 				</li>

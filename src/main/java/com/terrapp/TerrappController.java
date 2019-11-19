@@ -22,7 +22,7 @@ public class TerrappController {
 		return model;
 	}
 
-	@RequestMapping(value = "/inmueble", method = RequestMethod.GET)
+	@RequestMapping(value = "/inmuebles", method = RequestMethod.GET)
 	public ModelAndView obtenerInmueble() {
 		System.out.println("si entro inmueble");
 		ApiManager api = new ApiManager();
@@ -33,7 +33,7 @@ public class TerrappController {
 		System.out.println("la calle de la propiedad es: " + p.getDomicilio().getCalle());
 		System.out.println("el estado del domicilio es: " + d.getEstado());
 
-		ModelAndView model = new ModelAndView("inmueble");
+		ModelAndView model = new ModelAndView("inmuebles");
 
 		return model;
 
