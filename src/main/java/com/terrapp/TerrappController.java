@@ -1,11 +1,13 @@
 package com.terrapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.terrapp.models.Domicilio;
 import com.terrapp.models.Propiedad;
 import com.terrapp.util.ApiManager;
 
@@ -26,14 +28,25 @@ public class TerrappController {
 	public ModelAndView obtenerInmuebles() {
 		ApiManager api = new ApiManager();
 
-		Propiedad p = (Propiedad) api.obtenerObjetos("propiedades", new Propiedad()).get(0);
-		Domicilio d = (Domicilio) api.obtenerObjetos("domicilios", new Domicilio()).get(0);
+		List<Object> objList = api.obtenerObjetos("propiedades", new Propiedad());
+		List<Propiedad> prop = new ArrayList<Propiedad>();
 
-		System.out.println("la calle de la propiedad es: " + p.getDomicilio().getCalle());
-		System.out.println("el estado del domicilio es: " + d.getEstado());
+		for (int i = 0; i < objList.size(); i++) {
+
+			prop.add((Propiedad) objList.get(i));
+			prop.get(0).getFotos().iterator().next().getUrl();
+		}
+		// Propiedad p = (Propiedad) api.obtenerObjetos("propiedades", new
+		// Propiedad()).get(0);
+		// Domicilio d = (Domicilio) api.obtenerObjetos("domicilios", new
+		// Domicilio()).get(0);
+
+		// System.out.println("la calle de la propiedad es: " +
+		// p.get(0).getCasa().getEstacionamiento()
+		// System.out.println("el estado del domicilio es: " + d.getEstado());
 
 		ModelAndView model = new ModelAndView("inmuebles");
-		model.addObject("propiedad", p);
+		model.addObject("propiedad", prop);
 
 		return model;
 

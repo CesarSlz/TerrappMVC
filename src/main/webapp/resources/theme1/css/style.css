@@ -1780,7 +1780,13 @@ footer .credits {
   .grid .card-box-c,
   .grid .card-box-d {
     margin-bottom: 2.5rem;
+    height: 20rem;
   }
+  
+  .img-fluid {
+    width: auto;
+    height: auto;
+}
 
   .card-box-a:hover .img-a,
   .card-box-a:hover .img-b,

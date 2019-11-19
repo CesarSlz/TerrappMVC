@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.Set;
 
 public class Propiedad {
-
 	private Integer id;
+
 	private Domicilio domicilio;
 	private Usuario usuario;
 	private String descripcion;
@@ -22,6 +22,8 @@ public class Propiedad {
 	private Casa casa;
 	private Departamento departamento;
 	private Terreno terreno;
+	private Venta venta;
+	private Renta renta;
 	private Date fechaCreacion;
 	private Date fechaEliminacion;
 	private Date fechaModificacion;
@@ -205,6 +207,22 @@ public class Propiedad {
 
 	public void setTerreno(Terreno terreno) {
 		this.terreno = terreno;
+	}
+
+	public Venta getVenta() {
+		return venta;
+	}
+
+	public void setVenta(Venta venta) {
+		this.venta = venta;
+	}
+
+	public Renta getRenta() {
+		return renta;
+	}
+
+	public void setRenta(Renta renta) {
+		this.renta = renta;
 	}
 
 }
