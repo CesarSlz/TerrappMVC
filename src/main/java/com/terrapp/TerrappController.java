@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.terrapp.models.Inmobiliaria;
 import com.terrapp.models.Propiedad;
 import com.terrapp.util.ApiManager;
 
@@ -64,7 +65,19 @@ public class TerrappController {
 	@RequestMapping(value = "/inmobiliaria", method = RequestMethod.GET)
 	public ModelAndView obtenerInmobiliaria() {
 
+		ApiManager api = new ApiManager();
+
+		List<Object> objList = api.obtenerObjetos("inmobiliarias", new Inmobiliaria());
+		List<Inmobiliaria> inmobiliarias = new ArrayList<Inmobiliaria>();
+
+		for (int i = 0; i < objList.size(); i++) {
+
+			inmobiliarias.add((Inmobiliaria) objList.get(i));
+			inmobiliarias.get(0).getDomicilio().getCalle();
+		}
+
 		ModelAndView model = new ModelAndView("inmobiliaria");
+		model.addObject("inmobiliarias", inmobiliarias);
 
 		return model;
 

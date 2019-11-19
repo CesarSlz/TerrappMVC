@@ -9,6 +9,7 @@ public class Inmobiliaria {
 
 	private String nombre;
 	private String telefono;
+	private String logoUrl;
 	private boolean eliminado;
 	private Date fechaCreacion;
 	private Date fechaEliminacion;
@@ -38,7 +39,7 @@ public class Inmobiliaria {
 		return domicilio;
 	}
 
-	public void setIdDomicilio(Domicilio domicilio) {
+	public void setDomicilio(Domicilio domicilio) {
 		this.domicilio = domicilio;
 	}
 
@@ -56,6 +57,14 @@ public class Inmobiliaria {
 
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
+	}
+
+	public String getLogoUrl() {
+		return logoUrl;
+	}
+
+	public void setLogoUrl(String logoUrl) {
+		this.logoUrl = logoUrl;
 	}
 
 	public boolean isEliminado() {

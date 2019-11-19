@@ -119,4 +119,8 @@ public class Domicilio {
 		this.fechaModificacion = fechaModificacion;
 	}
 
+	public String getDireccion() {
+		return calle + " " + numeroExt + ", " + municipio + ", " + estado;
+	}
+
 }
