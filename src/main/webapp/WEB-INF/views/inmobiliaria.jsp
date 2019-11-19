@@ -44,6 +44,9 @@
 <link href="<c:url value="/resources/theme1/css/main.css" />"
 	rel="stylesheet">
 
+<link href="<c:url value="/resources/theme1/css/login_modal.css" />"
+	rel="stylesheet">
+
 <!-- =======================================================
     Theme Name: EstateAgency
     Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
@@ -443,5 +446,7 @@
 
 	<!-- Template Main Javascript File -->
 	<script src="<c:url value="/resources/theme1/js/main.js" />"></script>
+	
+	<script src="<c:url value="/resources/theme1/js/login_modal.js" />"></script>
 </body>
 </html>
