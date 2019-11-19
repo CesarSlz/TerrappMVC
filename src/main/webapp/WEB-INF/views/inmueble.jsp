@@ -42,7 +42,7 @@
 
 <link href="<c:url value="/resources/theme1/css/main.css" />"
 	rel="stylesheet">
-	
+
 <link href="<c:url value="/resources/theme1/css/login_modal.css" />"
 	rel="stylesheet">
 
@@ -62,6 +62,7 @@
 	<div><jsp:include page="Navigationbar.jsp" /></div>
 	<!-- Navigation bar ends -->
 	<!--/ Nav End /-->
+
 	<!--/ Intro Single star /-->
 	<section class="intro-single">
 		<div class="container">
@@ -70,6 +71,11 @@
 					<div class="title-single-box">
 						<h1 class="title-single">304 Blaster Up</h1>
 						<span class="color-text-a">Chicago, IL 606543</span>
+
+						${propiedad.getDescripcion()} ${propiedad.getMantenimiento()}
+						${propiedad.getAntiguedad()} ${propiedad.getEstatus()}
+						${propiedad.getAreaTerreno()} ${propiedad.getAreaConstruccion()}
+
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-4">
@@ -346,7 +352,7 @@
 
 	<!-- Template Main Javascript File -->
 	<script src="<c:url value="/resources/theme1/js/main.js" />"></script>
-	
+
 	<script src="<c:url value="/resources/theme1/js/login_modal.js" />"></script>
 
 </body>

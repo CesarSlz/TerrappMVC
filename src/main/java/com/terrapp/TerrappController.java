@@ -34,6 +34,7 @@ public class TerrappController {
 		System.out.println("el estado del domicilio es: " + d.getEstado());
 
 		ModelAndView model = new ModelAndView("inmueble");
+		model.addObject("propiedad", p);
 
 		return model;
 
