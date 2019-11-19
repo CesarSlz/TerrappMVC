@@ -50,13 +50,7 @@
 	
 <link href="<c:url value="/resources/theme1/css/login_modal.css" />"
 	rel="stylesheet">
-
-<!-- =======================================================
-    Theme Name: EstateAgency
-    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+	
 <link
 	href="<c:url value="https://fonts.googleapis.com/css?family=Exo&display=swap" />"
 	rel="stylesheet">
@@ -621,7 +615,7 @@
 		src="<c:url value="/resources/theme1/lib/owlcarousel/owl.carousel.min.js" />"></script>
 	<script
 		src="<c:url value="/resources/theme1/lib/scrollreveal/scrollreveal.min.js" />"></script>
-
+		
 	<!-- Contact Form JavaScript File -->
 	<script
 		src="<c:url value="/resources/theme1/contactform/contactform.js" />"></script>
