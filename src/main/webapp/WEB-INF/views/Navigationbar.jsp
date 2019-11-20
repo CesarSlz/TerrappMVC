@@ -141,7 +141,7 @@
 				<li class="nav-item"><a class="nav-link" href="nosotros">Nosotros</a></li>
 				<li class="nav-item"><a class="nav-link" href="inmuebles">Inmuebles</a>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="inmobiliaria">Inmobiliarias</a>
+				<li class="nav-item"><a class="nav-link" href="inmobiliarias">Inmobiliarias</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="#signup" data-toggle="modal"
 					data-target=".log-sign"

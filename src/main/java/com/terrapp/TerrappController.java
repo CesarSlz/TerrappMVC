@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -53,16 +54,32 @@ public class TerrappController {
 
 	}
 
-	@RequestMapping(value = "/inmueble", method = RequestMethod.GET)
-	public ModelAndView obtenerInmueble() {
+	@RequestMapping(value = "/inmueble/{id}", method = RequestMethod.GET)
+	public ModelAndView obtenerInmuebleById(@PathVariable Integer id) {
+		ApiManager api = new ApiManager();
+
+		Propiedad p = (Propiedad) api.obtenerObjetoById("propiedades", id, new Propiedad());
 
 		ModelAndView model = new ModelAndView("inmueble");
+		model.addObject("propiedad", p);
 
 		return model;
 
 	}
 
-	@RequestMapping(value = "/inmobiliaria", method = RequestMethod.GET)
+	@RequestMapping(value = "/inmueble", method = RequestMethod.GET)
+	public ModelAndView obtenerInmueble() {
+		ApiManager api = new ApiManager();
+
+		Propiedad p = (Propiedad) api.obtenerObjetos("propiedades", new Propiedad()).get(0);
+		ModelAndView model = new ModelAndView("inmueble");
+		model.addObject("propiedad", p);
+
+		return model;
+
+	}
+
+	@RequestMapping(value = "/inmobiliarias", method = RequestMethod.GET)
 	public ModelAndView obtenerInmobiliaria() {
 
 		ApiManager api = new ApiManager();

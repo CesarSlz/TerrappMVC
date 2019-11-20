@@ -9,7 +9,9 @@ public class Inmobiliaria {
 
 	private String nombre;
 	private String telefono;
+	private String url;
 	private String logoUrl;
+	private boolean vip;
 	private boolean eliminado;
 	private Date fechaCreacion;
 	private Date fechaEliminacion;
@@ -97,6 +99,22 @@ public class Inmobiliaria {
 
 	public void setFechaModificacion(Date fechaModificacion) {
 		this.fechaModificacion = fechaModificacion;
+	}
+
+	public boolean isVip() {
+		return vip;
+	}
+
+	public void setVip(boolean vip) {
+		this.vip = vip;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 }

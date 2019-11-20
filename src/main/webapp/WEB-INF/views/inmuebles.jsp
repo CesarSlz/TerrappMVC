@@ -100,8 +100,7 @@
 					<div class="grid-option">
 						<form>
 							<select class="custom-select">
-								<option selected>Todas</option>
-								<option value="1">Más recientes</option>
+								<option selected value="1">Todas</option>
 								<option value="2">Renta</option>
 								<option value="3">Venta</option>
 							</select>
@@ -119,7 +118,7 @@
 								<div class="card-overlay-a-content">
 									<div class="card-header-a">
 										<h2 class="card-title-a">
-											<a href="#">${propiedad.getDomicilio().getCalle()} <br />${propiedad.getDomicilio().getNumeroExt()}</a>
+											<a href="inmueble/${propiedad.getId()}">${propiedad.getDomicilio().getCalle()} <br />${propiedad.getDomicilio().getNumeroExt()}</a>
 										</h2>
 									</div>
 									<div class="card-body-a">

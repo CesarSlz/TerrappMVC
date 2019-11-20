@@ -101,8 +101,7 @@
 								<div class="card-header-d">
 									<div class="card-title-d align-self-center">
 										<h3 class="title-d">
-											<a href="#" class="link-two">${inmobiliarias.getNombre()}<br>
-												Escala
+											<a href="${inmobiliarias.getUrl()}" class="link-two">${inmobiliarias.getNombre()}<br>
 											</a>
 										</h3>
 									</div>

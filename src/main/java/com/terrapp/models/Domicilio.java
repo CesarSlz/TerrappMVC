@@ -123,4 +123,14 @@ public class Domicilio {
 		return calle + " " + numeroExt + ", " + municipio + ", " + estado;
 	}
 
+	public String getCalleNum() {
+
+		String nInt = numeroInt != null ? (" int " + numeroInt) : "";
+
+		return calle + " " + numeroExt + nInt;
+	}
+
+	public String getCdEdo() {
+		return municipio + ", " + estado;
+	}
 }
