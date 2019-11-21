@@ -47,10 +47,10 @@
 
 <link href="<c:url value="/resources/theme1/css/main.css" />"
 	rel="stylesheet">
-	
+
 <link href="<c:url value="/resources/theme1/css/login_modal.css" />"
 	rel="stylesheet">
-	
+
 <link
 	href="<c:url value="https://fonts.googleapis.com/css?family=Exo&display=swap" />"
 	rel="stylesheet">
@@ -64,84 +64,56 @@
 	<!--/ Carousel Star /-->
 	<div class="intro intro-carousel">
 		<div id="carousel" class="owl-carousel owl-theme">
-			<div class="carousel-item-a intro-item bg-image"
-				style="background-image: url(resources/theme1/img/slide-1.jpg)">
-				<div class="overlay overlay-a"></div>
-				<div class="intro-content display-table">
-					<div class="table-cell">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8">
-									<div class="intro-body">
-										<p class="intro-title-top">
-											Doral, Florida <br> 78345
-										</p>
-										<h1 class="intro-title mb-4">
-											<span class="color-b">204 </span> Mount <br> Olive Road
-											Two
-										</h1>
-										<p class="intro-subtitle intro-price">
-											<a href="#"><span class="price-a">rent | $ 12.000</span></a>
-										</p>
+
+			<c:forEach var="propiedad" items="${propiedad}">
+				<div class="carousel-item-a intro-item bg-image"
+					style="background-image: url(${propiedad.getFotos().iterator().next().getUrl()})">
+					<div class="overlay overlay-a"></div>
+					<div class="intro-content display-table">
+						<div class="table-cell">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="intro-body">
+											<p class="intro-title-top">
+												${propiedad.getDomicilio().getCdEdo()}<br>
+												${propiedad.getDomicilio().getCp()}
+											</p>
+											<h1 class="intro-title mb-4">
+												<span class="color-b">${propiedad.getDomicilio().getCalle()}</span>
+												${propiedad.getDomicilio().getNumeroExt()}
+
+												<c:if
+													test="${propiedad.getDomicilio().getNumeroInt()!=null}">
+												-${propiedad.getDomicilio().getNumeroInt()}
+											</c:if>
+
+											</h1>
+
+											<p class="intro-subtitle intro-price">
+												<c:if test="${propiedad.getVenta()!=null}">
+
+													<a href="#"><span class="price-a">venta |
+															$${propiedad.getVenta().getMonto()}</span></a>
+
+												</c:if>
+
+												<c:if test="${propiedad.getRenta()!=null}">
+
+													<a href="#"><span class="price-a">renta |
+															$${propiedad.getRenta().getMonto()}</span></a>
+
+												</c:if>
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="carousel-item-a intro-item bg-image"
-				style="background-image: url(resources/theme1/img/slide-2.jpg)">
-				<div class="overlay overlay-a"></div>
-				<div class="intro-content display-table">
-					<div class="table-cell">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8">
-									<div class="intro-body">
-										<p class="intro-title-top">
-											Doral, Florida <br> 78345
-										</p>
-										<h1 class="intro-title mb-4">
-											<span class="color-b">204 </span> Rino <br> Venda Road
-											Five
-										</h1>
-										<p class="intro-subtitle intro-price">
-											<a href="#"><span class="price-a">rent | $ 12.000</span></a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item-a intro-item bg-image"
-				style="background-image: url(resources/theme1/img/slide-3.jpg)">
-				<div class="overlay overlay-a"></div>
-				<div class="intro-content display-table">
-					<div class="table-cell">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8">
-									<div class="intro-body">
-										<p class="intro-title-top">
-											Doral, Florida <br> 78345
-										</p>
-										<h1 class="intro-title mb-4">
-											<span class="color-b">204 </span> Alira <br> Roan Road
-											One
-										</h1>
-										<p class="intro-subtitle intro-price">
-											<a href="#"><span class="price-a">rent | $ 12.000</span></a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			</c:forEach>
+
 		</div>
 	</div>
 	<!--/ Carousel end /-->
@@ -432,162 +404,35 @@
 				</div>
 			</div>
 			<div class="row">
+			<c:forEach var="inmobiliarias" items="${inmobiliarias}">
 				<div class="col-md-4">
+				
 					<div class="card-box-d">
 						<div class="card-img-d">
-							<img src="resources/theme1/img/agent-4.jpg" alt=""
+							<img src="${inmobiliarias.getLogoUrl()}" alt=""
 								class="img-d img-fluid">
 						</div>
 						<div class="card-overlay card-overlay-hover">
 							<div class="card-header-d">
 								<div class="card-title-d align-self-center">
 									<h3 class="title-d">
-										<a href="agent-single.html" class="link-two">Margaret
-											Sotillo <br> Escala
+										<a href="${inmobiliarias.getUrl()}" class="link-two">${inmobiliarias.getNombre()}<br>
 										</a>
 									</h3>
 								</div>
 							</div>
 							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
+								<p class="content-d color-text-a">${inmobiliarias.getDomicilio().getDireccion()}</p>
 								<div class="info-agents color-a">
 									<p>
-										<strong>Phone: </strong> +54 356 945234
+										<strong>Teléfono: </strong>${inmobiliarias.getTelefono()}
 									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
-								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="resources/theme1/img/agent-1.jpg" alt=""
-								class="img-d img-fluid">
-						</div>
-						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
-								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										<a href="agent-single.html" class="link-two">Stiven
-											Spilver <br> Darw
-										</a>
-									</h3>
-								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
-								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="resources/theme1/img/agent-5.jpg" alt=""
-								class="img-d img-fluid">
-						</div>
-						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
-								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										<a href="agent-single.html" class="link-two">Emma Toledo <br>
-											Cascada
-										</a>
-									</h3>
-								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
-								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+</c:forEach>
 			</div>
 		</div>
 	</section>
@@ -615,14 +460,14 @@
 		src="<c:url value="/resources/theme1/lib/owlcarousel/owl.carousel.min.js" />"></script>
 	<script
 		src="<c:url value="/resources/theme1/lib/scrollreveal/scrollreveal.min.js" />"></script>
-		
+
 	<!-- Contact Form JavaScript File -->
 	<script
 		src="<c:url value="/resources/theme1/contactform/contactform.js" />"></script>
 
 	<!-- Template Main Javascript File -->
 	<script src="<c:url value="/resources/theme1/js/main.js" />"></script>
-	
+
 	<script src="<c:url value="/resources/theme1/js/login_modal.js" />"></script>
 
 </body>
