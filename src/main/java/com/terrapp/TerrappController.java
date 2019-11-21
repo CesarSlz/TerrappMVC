@@ -37,10 +37,19 @@ public class TerrappController {
 
 			inmo.add((Inmobiliaria) objList2.get(i));
 		}
+		
+		List<Object> objList3 = api.obtenerObjetos("propiedades/ultimas", new Propiedad());
+		List<Propiedad> prop2 = new ArrayList<Propiedad>();
 
+		for (int i = 0; i < objList3.size(); i++) {
+
+			prop2.add((Propiedad) objList3.get(i));
+		}
+		
 		ModelAndView model = new ModelAndView("index");
 		model.addObject("propiedad", prop);
 		model.addObject("inmobiliarias", inmo);
+		model.addObject("propiedadRec", prop2);
 
 		return model;
 	}
