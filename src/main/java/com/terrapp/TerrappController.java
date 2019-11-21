@@ -19,9 +19,28 @@ public class TerrappController {
 
 	@RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
 	public ModelAndView obtenerIndice() {
-		System.out.println("si entro al pinche indices");
+		
+		ApiManager api = new ApiManager();
+		
+		List<Object> objList = api.obtenerObjetos("propiedades/destacadas", new Propiedad());
+		List<Propiedad> prop = new ArrayList<Propiedad>();
 
+		for (int i = 0; i < objList.size(); i++) {
+
+			prop.add((Propiedad) objList.get(i));
+		}
+		
+		List<Object> objList2 = api.obtenerObjetos("inmobiliarias/vip", new Inmobiliaria());
+		List<Inmobiliaria> inmo = new ArrayList<Inmobiliaria>();
+
+		for (int i = 0; i < objList2.size(); i++) {
+
+			inmo.add((Inmobiliaria) objList2.get(i));
+		}
+		
 		ModelAndView model = new ModelAndView("index");
+		model.addObject("propiedad", prop);
+		model.addObject("inmobiliarias", inmo);
 
 		return model;
 	}
@@ -36,16 +55,7 @@ public class TerrappController {
 		for (int i = 0; i < objList.size(); i++) {
 
 			prop.add((Propiedad) objList.get(i));
-			prop.get(0).getFotos().iterator().next().getUrl();
 		}
-		// Propiedad p = (Propiedad) api.obtenerObjetos("propiedades", new
-		// Propiedad()).get(0);
-		// Domicilio d = (Domicilio) api.obtenerObjetos("domicilios", new
-		// Domicilio()).get(0);
-
-		// System.out.println("la calle de la propiedad es: " +
-		// p.get(0).getCasa().getEstacionamiento()
-		// System.out.println("el estado del domicilio es: " + d.getEstado());
 
 		ModelAndView model = new ModelAndView("inmuebles");
 		model.addObject("propiedad", prop);
@@ -90,7 +100,6 @@ public class TerrappController {
 		for (int i = 0; i < objList.size(); i++) {
 
 			inmobiliarias.add((Inmobiliaria) objList.get(i));
-			inmobiliarias.get(0).getDomicilio().getCalle();
 		}
 
 		ModelAndView model = new ModelAndView("inmobiliaria");
@@ -109,32 +118,3 @@ public class TerrappController {
 
 	}
 }
-
-/*
- * // Crear una instancia que permitira realizar una peticion HTTP Client client
- * = ClientBuilder.newClient();
- * 
- * // Indicando la direccion a donde se a va dirigir la peticion WebTarget
- * target = client.target(URI_BASE + "propiedades");
- * 
- * // Configurar peticion que responde un MIME type JSON // Obtener peticion
- * Invocation.Builder request = target.request(MediaType.APPLICATION_JSON_TYPE);
- * 
- * // Obtener la respuesta de la peticion de tipo GET Response response =
- * request.get();
- * 
- * // Procesar respuesta para convertirla a JSON String jsonResponse =
- * response.readEntity(String.class);
- * 
- * System.out.println(jsonResponse);
- * 
- * //@JsonFormat (shape = Shape.STRING, pattern = "yyy-MM-dd HH:mm:ss")
- * 
- * // Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
- * 
- * Respuesta r = new Respuesta(jsonResponse);
- * 
- * Propiedad p = (Propiedad) r.getDatos(new Propiedad());
- * System.out.println(p.getId());
- * 
- */
