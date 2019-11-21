@@ -205,182 +205,79 @@
 				</div>
 			</div>
 			<div id="property-carousel" class="owl-carousel owl-theme">
+			<c:forEach var="propiedadRec" items="${propiedadRec}">
 				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="resources/theme1/img/property-6.jpg" alt=""
-								class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">206 Mount <br /> Olive
-											Road Two
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">rent | $ 12.000</span>
+						<div class="card-box-a card-shadow">
+							<div class="img-box-a">
+								<img src="${propiedadRec.getFotos().iterator().next().getUrl()}"
+									alt="" class="img-a">
+							</div>
+							
+							<div class="card-overlay">
+								<div class="card-overlay-a-content">
+									<div class="card-header-a">
+										<h2 class="card-title-a">
+											<a href="inmueble/${propiedadRec.getId()}">${propiedadRec.getDomicilio().getCalle()}
+												<br />${propiedadRec.getDomicilio().getNumeroExt()}</a>
+										</h2>
 									</div>
-									<a href="#" class="link-a">Click here to view <span
-										class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Area</h4> <span>340m <sup>2</sup>
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Beds</h4> <span>2</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Baths</h4> <span>4</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Garages</h4> <span>1</span>
-										</li>
-									</ul>
+									<div class="card-body-a">
+
+										<c:if test="${propiedadRec.getVenta()!=null}">
+											<div class="price-box d-flex">
+												<span class="price-a">venta |
+													$${propiedadRec.getVenta().getMonto()}</span>
+											</div>
+										</c:if>
+										<c:if test="${propiedadRec.getRenta()!=null}">
+											<div class="price-box d-flex">
+												<span class="price-a">renta |
+													$${propiedadRec.getRenta().getMonto()} </span>
+											</div>
+										</c:if>
+
+										<a href="inmueble/${propiedadRec.getId()}" class="link-a">Click
+											aquí para ver más <span class="ion-ios-arrow-forward"></span>
+										</a>
+									</div>
+									<div class="card-footer-a">
+										<ul class="card-info d-flex justify-content-around">
+											<li>
+												<h4 class="card-info-title">Área</h4> <span>${propiedadRec.getAreaConstruccion()}m
+													<sup>2</sup>
+											</span>
+											</li>
+											<c:choose>
+												<c:when test="${propiedadRec.getCasa()!=null}">
+													<li>
+														<h4 class="card-info-title">🛏️</h4> <span>${propiedadRec.getCasa().getRecamara()}</span>
+													</li>
+													<li>
+														<h4 class="card-info-title">🚿</h4> <span>${propiedadRec.getCasa().getBano()}</span>
+													</li>
+													<li>
+														<h4 class="card-info-title">🚗</h4> <span>${propiedadRec.getCasa().getEstacionamiento()}</span>
+													</li>
+												</c:when>
+												<c:when test="${propiedadRec.getDepartamento()!=null}">
+													<li>
+														<h4 class="card-info-title">🛏️</h4> <span>${propiedadRec.getDepartamento().getRecamara()}</span>
+													</li>
+													<li>
+														<h4 class="card-info-title">🚿</h4> <span>${propiedadRec.getDepartamento().getBano()}</span>
+													</li>
+													<li>
+														<h4 class="card-info-title">🚗</h4> <span>${propiedadRec.getDepartamento().getEstacionamiento()}</span>
+													</li>
+												</c:when>
+											</c:choose>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="resources/theme1/img/property-3.jpg" alt=""
-								class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">157 West <br /> Central
-											Park
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">rent | $ 12.000</span>
-									</div>
-									<a href="property-single.html" class="link-a">Click here to
-										view <span class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Area</h4> <span>340m <sup>2</sup>
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Beds</h4> <span>2</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Baths</h4> <span>4</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Garages</h4> <span>1</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="resources/theme1/img/property-7.jpg" alt=""
-								class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">245 Azabu <br /> Nishi
-											Park let
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">rent | $ 12.000</span>
-									</div>
-									<a href="property-single.html" class="link-a">Click here to
-										view <span class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Area</h4> <span>340m <sup>2</sup>
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Beds</h4> <span>2</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Baths</h4> <span>4</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Garages</h4> <span>1</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="resources/theme1/img/property-10.jpg" alt=""
-								class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">204 Montal <br /> South
-											Bela Two
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">rent | $ 12.000</span>
-									</div>
-									<a href="property-single.html" class="link-a">Click here to
-										view <span class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Area</h4> <span>340m <sup>2</sup>
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Beds</h4> <span>2</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Baths</h4> <span>4</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Garages</h4> <span>1</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				</c:forEach>
 			</div>
 		</div>
 	</section>
@@ -422,9 +319,9 @@
 								</div>
 							</div>
 							<div class="card-body-d">
-								<p class="content-d color-text-a">${inmobiliarias.getDomicilio().getDireccion()}</p>
+								<p class="content-d text-white">${inmobiliarias.getDomicilio().getDireccion()}</p>
 								<div class="info-agents color-a">
-									<p>
+									<p class="text-white">
 										<strong>Teléfono: </strong>${inmobiliarias.getTelefono()}
 									</p>
 								</div>

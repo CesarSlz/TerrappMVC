@@ -107,9 +107,9 @@
 									</div>
 								</div>
 								<div class="card-body-d">
-									<p class="content-d color-text-a">${inmobiliarias.getDomicilio().getDireccion()}</p>
+									<p class="content-d text-white">${inmobiliarias.getDomicilio().getDireccion()}</p>
 									<div class="info-agents color-a">
-										<p>
+										<p class="text-white">
 											<strong>Teléfono: </strong>${inmobiliarias.getTelefono()}
 									</div>
 								</div>

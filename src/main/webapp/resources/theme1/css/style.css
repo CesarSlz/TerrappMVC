@@ -28,13 +28,13 @@ a:hover {
 }
 
 .link-two {
-	color: #000000;
+	color: #543b23;
 	transition: all 0.5s ease;
 }
 
 .link-two:hover {
 	text-decoration: underline;
-	color: #81be1c;
+	color: #ffffff;
 }
 
 .link-one {
@@ -998,11 +998,13 @@ rotate
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	height: 25rem;
 }
 
 .card-box-a .img-a, .card-box-a .img-b, .card-box-b .img-a, .card-box-b .img-b
 	{
-	object-fit: fill !important;
+	height: -webkit-fill-available;
+	width: 100%;
 	transition: 0.8s all ease-in-out;
 }
 
@@ -1724,16 +1726,9 @@ footer .credits {
 	.grid .card-box-a, .grid .card-box-b, .grid .card-box-c, .grid .card-box-d
 		{
 		margin-bottom: 2.5rem;
-		height: 20rem;
+		height: 25rem;
 	}
-	.img-fluid {
-		width: auto !important;
-		height: auto !important;
-	}
-	img-fluid-2 {
-		width: auto !important;
-		height: 200 px !important;
-	}
+	
 	.card-box-a:hover .img-a, .card-box-a:hover .img-b, .card-box-b:hover .img-a,
 		.card-box-b:hover .img-b {
 		-webkit-transform: scale(1.2);
