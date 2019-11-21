@@ -45,6 +45,60 @@ public class Propiedad {
 		this.fechaCreacion = new Date();
 	}
 
+	public String getTipoPropiedad() {
+		if (casa != null) {
+			return "casa";
+		} else if (departamento != null) {
+			return "departamento";
+		} else if (terreno != null) {
+			return "terreno";
+		} else {
+			return "propiedad";
+		}
+	}
+
+	public String getEstado() {
+		if (venta != null && renta != null) {
+			return "venta y renta";
+		} else if (venta != null) {
+			return "venta";
+		} else if (renta != null) {
+			return "renta";
+		} else {
+			return "por definir";
+		}
+	}
+
+	public String getRecamaras() {
+		if (casa != null) {
+			return casa.getRecamara();
+		} else if (departamento != null) {
+			return departamento.getRecamara();
+		} else {
+			return null;
+		}
+	}
+
+	public String getBanos() {
+		if (casa != null) {
+			return casa.getBano();
+		} else if (departamento != null) {
+			return departamento.getBano();
+		} else {
+			return null;
+		}
+	}
+
+	public String getEst() {
+		if (casa != null) {
+			return casa.getEstacionamiento();
+		} else if (departamento != null) {
+			return departamento.getEstacionamiento();
+		} else {
+			return null;
+		}
+	}
+
 	public Integer getId() {
 		return id;
 	}

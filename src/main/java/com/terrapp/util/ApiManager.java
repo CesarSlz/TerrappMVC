@@ -51,7 +51,7 @@ public class ApiManager {
 		String jsonResponse = response.readEntity(String.class);
 
 		System.out.println(jsonResponse);
-
+		// System.out.println("entro a obtener objeto");
 		Respuesta r = new Respuesta(jsonResponse);
 
 		System.out.println(r.getMensaje());

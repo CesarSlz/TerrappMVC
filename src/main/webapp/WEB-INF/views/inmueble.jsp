@@ -104,27 +104,27 @@
 					</div>
 					<div class="row justify-content-between">
 						<div class="col-md-5 col-lg-4">
-							<c:if test="">
+							<c:if test="${propiedad.getVenta()!=null}">
 								<div class="property-price d-flex justify-content-center foo">
 									<div class="card-header-c d-flex">
 										<div class="card-box-ico">
 											<span class="title-d">VENTA</span>
 										</div>
 										<div class="card-title-c align-self-center">
-											<h5 class="title-c">$15000</h5>
+											<h5 class="title-c">$${propiedad.getVenta().getMonto()}</h5>
 										</div>
 									</div>
 								</div>
 								<p></p>
 							</c:if>
-							<c:if test="">
+							<c:if test="${propiedad.getRenta()!=null}">
 								<div class="property-price d-flex justify-content-center foo">
 									<div class="card-header-c d-flex">
 										<div class="card-box-ico">
 											<span class="title-d">RENTA</span>
 										</div>
 										<div class="card-title-c align-self-center">
-											<h5 class="title-c">$15000</h5>
+											<h5 class="title-c">$${propiedad.getRenta().getMonto()}</h5>
 										</div>
 									</div>
 								</div>
@@ -133,29 +133,35 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="title-box-d section-t4">
-											<h3 class="title-d">Quick Summary</h3>
+											<h3 class="title-d">Resumen de Propiedad</h3>
 										</div>
 									</div>
 								</div>
 								<div class="summary-list">
 									<ul class="list">
-										<li class="d-flex justify-content-between"><strong>Property
-												ID:</strong> <span>1134</span></li>
-										<li class="d-flex justify-content-between"><strong>Location:</strong>
-											<span>Chicago, IL 606543</span></li>
-										<li class="d-flex justify-content-between"><strong>Property
-												Type:</strong> <span>House</span></li>
+										<li class="d-flex justify-content-between"><strong>ID
+												PROPIEDAD:</strong> <span>${propiedad.getId()}</span></li>
+										<li class="d-flex justify-content-between"><strong>Ubicación:</strong>
+											<span>${propiedad.getDomicilio().getCdEdo()}</span></li>
+										<li class="d-flex justify-content-between"><strong>Tipo
+												de propiedad:</strong> <span>${propiedad.getTipoPropiedad()}</span></li>
 										<li class="d-flex justify-content-between"><strong>Status:</strong>
-											<span>Sale</span></li>
-										<li class="d-flex justify-content-between"><strong>Area:</strong>
-											<span>340m <sup>2</sup>
+											<span>${propiedad.getEstado()}</span></li>
+										<li class="d-flex justify-content-between"><strong>Area
+												Terreno:</strong> <span>${propiedad.getAreaTerreno()}m <sup>2</sup>
 										</span></li>
-										<li class="d-flex justify-content-between"><strong>Beds:</strong>
-											<span>4</span></li>
-										<li class="d-flex justify-content-between"><strong>Baths:</strong>
-											<span>2</span></li>
-										<li class="d-flex justify-content-between"><strong>Garage:</strong>
-											<span>1</span></li>
+										<c:if test="${propiedad.getRecamaras()!=null}">
+											<li class="d-flex justify-content-between"><strong>Cuartos:</strong>
+												<span>${propiedad.getRecamaras()}</span></li>
+										</c:if>
+										<c:if test="${propiedad.getBanos()!=null}">
+											<li class="d-flex justify-content-between"><strong>Baños:</strong>
+												<span>${propiedad.getBanos()}</span></li>
+										</c:if>
+										<c:if test="${propiedad.getEst()!=null}">
+											<li class="d-flex justify-content-between"><strong>Estacionamientos:</strong>
+												<span>${propiedad.getEst()}</span></li>
+										</c:if>
 									</ul>
 								</div>
 							</div>
@@ -164,42 +170,34 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="title-box-d">
-										<h3 class="title-d">Property Description</h3>
+										<h3 class="title-d">Descripcion de Propiedad</h3>
 									</div>
 								</div>
 							</div>
 							<div class="property-description">
-								<p class="description color-text-a">Vestibulum ante ipsum
-									primis in faucibus orci luctus et ultrices posuere cubilia
-									Curae; Donec velit neque, auctor sit amet aliquam vel,
-									ullamcorper sit amet ligula. Cras ultricies ligula sed magna
-									dictum porta. Curabitur aliquet quam id dui posuere blandit.
-									Mauris blandit aliquet elit, eget tincidunt nibh pulvinar quam
-									id dui posuere blandit.</p>
-								<p class="description color-text-a no-margin">Curabitur arcu
-									erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum
-									congue leo eget malesuada. Quisque velit nisi, pretium ut
-									lacinia in, elementum id enim. Donec sollicitudin molestie
-									malesuada.</p>
+								<p class="description color-text-a">${propiedad.getDescripcion()}</p>
 							</div>
 							<div class="row section-t3">
 								<div class="col-sm-12">
 									<div class="title-box-d">
-										<h3 class="title-d">Amenities</h3>
+										<h3 class="title-d">Amenidades</h3>
 									</div>
 								</div>
 							</div>
 							<div class="amenities-list color-text-a">
 								<ul class="list-a no-margin">
-									<li>Balcony</li>
-									<li>Outdoor Kitchen</li>
-									<li>Cable Tv</li>
-									<li>Deck</li>
-									<li>Tennis Courts</li>
-									<li>Internet</li>
-									<li>Parking</li>
-									<li>Sun Room</li>
-									<li>Concrete Flooring</li>
+									<c:forEach var="areas"
+										items="${propiedad.getAreasCompartidas().getAreasCompartidas()}">
+										<li>${areas}</li>
+									</c:forEach>
+									<c:forEach var="caracteristicas"
+										items="${propiedad.getCaracteristicas().getCaracteristicas()}">
+										<li>${caracteristicas}</li>
+									</c:forEach>
+									<c:forEach var="servicios"
+										items="${propiedad.getServicios().getServicios()}">
+										<li>${servicios}</li>
+									</c:forEach>
 								</ul>
 							</div>
 						</div>
@@ -208,36 +206,28 @@
 				<div class="col-md-10 offset-md-1">
 					<ul class="nav nav-pills-a nav-pills mb-3 section-t3"
 						id="pills-tab" role="tablist">
+						<li class="nav-item"><a class="nav-link" id="pills-map-tab"
+							data-toggle="pill" href="#pills-map" role="tab"
+							aria-controls="pills-map" aria-selected="false">Mapa</a></li>
 						<li class="nav-item"><a class="nav-link active"
 							id="pills-video-tab" data-toggle="pill" href="#pills-video"
 							role="tab" aria-controls="pills-video" aria-selected="true">Video</a>
 						</li>
-						<li class="nav-item"><a class="nav-link" id="pills-plans-tab"
-							data-toggle="pill" href="#pills-plans" role="tab"
-							aria-controls="pills-plans" aria-selected="false">Floor Plans</a>
-						</li>
-						<li class="nav-item"><a class="nav-link" id="pills-map-tab"
-							data-toggle="pill" href="#pills-map" role="tab"
-							aria-controls="pills-map" aria-selected="false">Ubication</a></li>
+
 					</ul>
 					<div class="tab-content" id="pills-tabContent">
 						<div class="tab-pane fade show active" id="pills-video"
 							role="tabpanel" aria-labelledby="pills-video-tab">
 							<iframe src="https://player.vimeo.com/video/73221098"
-								width="100%" height="460" frameborder="0" webkitallowfullscreen
-								mozallowfullscreen allowfullscreen></iframe>
-						</div>
-						<div class="tab-pane fade" id="pills-plans" role="tabpanel"
-							aria-labelledby="pills-plans-tab">
-							<img src="/resources/theme1/img/plan2.jpg" alt=""
-								class="img-fluid">
+								width="100%" height="460" frameborder="0"></iframe>
 						</div>
 						<div class="tab-pane fade" id="pills-map" role="tabpanel"
 							aria-labelledby="pills-map-tab">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
-								width="100%" height="460" frameborder="0" style="border: 0"
-								allowfullscreen></iframe>
+
+							<iframe width="100%" height="450" frameborder="0"
+								style="border: 0"
+								src="https://www.google.com/maps/embed/v1/search?q=${urlmap}&key=AIzaSyCzUsej-MK7-LBy7U5AF-uOoZ4kwSguZIU"></iframe>
+
 						</div>
 					</div>
 				</div>

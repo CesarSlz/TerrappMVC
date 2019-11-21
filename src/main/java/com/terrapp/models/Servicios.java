@@ -1,6 +1,8 @@
 package com.terrapp.models;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Servicios {
 
@@ -33,6 +35,26 @@ public class Servicios {
 		this.seguridadPrivada = seguridadPrivada;
 		this.calentadorAgua = calentadorAgua;
 		this.fechaCreacion = new Date();
+	}
+
+	public List<String> getServicios() {
+		List<String> lista = new ArrayList<String>();
+		if (gas)
+			lista.add("Gas");
+		if (ac)
+			lista.add("Aire Acondicionado");
+		if (cisterna)
+			lista.add("Cisterna");
+		if (calefaccion)
+			lista.add("Calefaccion");
+		if (gimnasio)
+			lista.add("Gimnasio");
+		if (seguridadPrivada)
+			lista.add("Seguridad Privada");
+		if (calentadorAgua)
+			lista.add("Calentador de Agua");
+		lista.sort(null);
+		return lista;
 	}
 
 	public Integer getId() {

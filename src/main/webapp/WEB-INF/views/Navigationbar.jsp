@@ -138,10 +138,10 @@
 			<ul class="navbar-nav">
 				<li class="nav-item"><a class="nav-link" href="/terrapp">Inicio</a>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="nosotros">Nosotros</a></li>
-				<li class="nav-item"><a class="nav-link" href="inmuebles">Inmuebles</a>
+				<li class="nav-item"><a class="nav-link" href="/terrapp/nosotros">Nosotros</a></li>
+				<li class="nav-item"><a class="nav-link" href="/terrapp/inmuebles">Inmuebles</a>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="inmobiliarias">Inmobiliarias</a>
+				<li class="nav-item"><a class="nav-link" href="/terrapp/inmobiliarias">Inmobiliarias</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="#signup" data-toggle="modal"
 					data-target=".log-sign"

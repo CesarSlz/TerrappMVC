@@ -16,9 +16,10 @@ public class Respuesta {
 
 	public Respuesta(String gson) {
 		Gson g = new Gson();
+		System.out.println(gson);
 
 		Respuesta r = g.fromJson(gson, Respuesta.class);
-
+		System.out.println("entro a respuesta");
 		this.codigo = r.getCodigo();
 		this.mensaje = r.getMensaje();
 		this.datos = r.getDatos();
@@ -67,6 +68,8 @@ public class Respuesta {
 	public Object getDato(Object objeto, Integer index) {
 
 		Gson gson = new Gson();
+
+		System.out.println("si llego a getDato");
 
 		Object salida = gson.fromJson(this.datos.get(index).toString(), objeto.getClass());
 		return salida;

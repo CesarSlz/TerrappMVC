@@ -1,6 +1,8 @@
 package com.terrapp.models;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Caracteristicas {
 
@@ -34,6 +36,26 @@ public class Caracteristicas {
 		this.jardin = jardin;
 		this.cocinaIntegral = cocinaIntegral;
 		this.fechaCreacion = new Date();
+	}
+
+	public List<String> getCaracteristicas() {
+		List<String> lista = new ArrayList<String>();
+		if (chimenea)
+			lista.add("chimenea");
+		if (accesoDiscapacitados)
+			lista.add("Acceso Discapacitados");
+		if (alberca)
+			lista.add("Alberca");
+		if (amueblado)
+			lista.add("Amueblado");
+		if (mascotas)
+			lista.add("Mascotas");
+		if (jardin)
+			lista.add("Jardin");
+		if (cocinaIntegral)
+			lista.add("Cocina Integral");
+		lista.sort(null);
+		return lista;
 	}
 
 	public Integer getId() {

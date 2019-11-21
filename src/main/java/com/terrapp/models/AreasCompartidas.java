@@ -1,6 +1,8 @@
 package com.terrapp.models;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class AreasCompartidas {
 
@@ -27,6 +29,20 @@ public class AreasCompartidas {
 		this.estacionamientoVisita = estacionamientoVisita;
 		this.areasRecreativas = areasRecreativas;
 		this.fechaCreacion = new Date();
+	}
+
+	public List<String> getAreasCompartidas() {
+		List<String> lista = new ArrayList<String>();
+		if (alberca)
+			lista.add("Alberca");
+		if (salonUsosMultiples)
+			lista.add("Salón de Usos Multiples");
+		if (estacionamientoVisita)
+			lista.add("Estacionamiento Visitas");
+		if (areasRecreativas)
+			lista.add("Áreas Recreativas");
+		lista.sort(null);
+		return lista;
 	}
 
 	public Integer getId() {
