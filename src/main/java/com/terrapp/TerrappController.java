@@ -19,9 +19,9 @@ public class TerrappController {
 
 	@RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
 	public ModelAndView obtenerIndice() {
-		
+
 		ApiManager api = new ApiManager();
-		
+
 		List<Object> objList = api.obtenerObjetos("propiedades/destacadas", new Propiedad());
 		List<Propiedad> prop = new ArrayList<Propiedad>();
 
@@ -29,7 +29,7 @@ public class TerrappController {
 
 			prop.add((Propiedad) objList.get(i));
 		}
-		
+
 		List<Object> objList2 = api.obtenerObjetos("inmobiliarias/vip", new Inmobiliaria());
 		List<Inmobiliaria> inmo = new ArrayList<Inmobiliaria>();
 
@@ -37,7 +37,7 @@ public class TerrappController {
 
 			inmo.add((Inmobiliaria) objList2.get(i));
 		}
-		
+
 		ModelAndView model = new ModelAndView("index");
 		model.addObject("propiedad", prop);
 		model.addObject("inmobiliarias", inmo);
@@ -119,6 +119,15 @@ public class TerrappController {
 	public ModelAndView obtenerNosotros() {
 
 		ModelAndView model = new ModelAndView("nosotros");
+
+		return model;
+
+	}
+
+	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+	public ModelAndView obtenerDashboard() {
+
+		ModelAndView model = new ModelAndView("dashboard");
 
 		return model;
 

@@ -1428,20 +1428,17 @@ rotate
 	font-weight: 700;
 	letter-spacing: 0.043em;
 	font-size: 1rem;
+	font-family: "Exo", sans-serif !important;
 }
 
-.sinse-box .sinse-title span {
-	position: absolute;
+.exofont {
+	font-family: "Exo", sans-serif !important;
 }
 
-.sinse-box .sinse-title span:after {
-	content: " ";
-	width: 35px;
-	height: 2px;
-	background-color: #000000;
-	position: absolute;
-	bottom: -15px;
+.sinse-box .sinse-title br {
+	font-size: .5rem !Important;
 }
+
 
 .sinse-box p {
 	margin-bottom: 0;
