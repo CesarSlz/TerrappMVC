@@ -134,7 +134,7 @@
 													$${propiedad.getRenta().getMonto()} </span>
 											</div>
 										</c:if>
-										<a href="property-single.html" class="link-a">Click aquí
+										<a href="inmueble/${propiedad.getId()}" class="link-a">Click aquí
 											para ver más <span class="ion-ios-arrow-forward"></span>
 										</a>
 									</div>

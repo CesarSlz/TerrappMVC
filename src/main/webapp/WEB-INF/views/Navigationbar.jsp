@@ -122,8 +122,8 @@
 
 
 		<a class="navbar-brand text-brand" href="/terrapp"> <span
-			class="card"> <img class="logo" src="resources/theme1/img/logo_cafe.png"
-				alt="Card Back"> <img src="resources/theme1/img/logo_verde.png"
+			class="card"> <img class="logo" src="/terrapp/resources/theme1/img/logo_cafe.png"
+				alt="Card Back"> <img src="/terrapp/resources/theme1/img/logo_verde.png"
 				class="logo img-top" alt="Card Front"> TERRA<span class="color-b2">pp</span>
 		</span>
 		</a>
