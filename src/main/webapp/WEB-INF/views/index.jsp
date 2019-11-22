@@ -1,5 +1,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="UTF-8">
 <head>
@@ -204,14 +205,14 @@
 				</div>
 			</div>
 			<div id="property-carousel" class="owl-carousel owl-theme">
-			<c:forEach var="propiedadRec" items="${propiedadRec}">
-				<div class="carousel-item-b">
+				<c:forEach var="propiedadRec" items="${propiedadRec}">
+					<div class="carousel-item-b">
 						<div class="card-box-a card-shadow">
 							<div class="img-box-a">
 								<img src="${propiedadRec.getFotos().iterator().next().getUrl()}"
 									alt="" class="img-a">
 							</div>
-							
+
 							<div class="card-overlay">
 								<div class="card-overlay-a-content">
 									<div class="card-header-a">
@@ -300,35 +301,35 @@
 				</div>
 			</div>
 			<div class="row">
-			<c:forEach var="inmobiliarias" items="${inmobiliarias}">
-				<div class="col-md-4">
-				
-					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="${inmobiliarias.getLogoUrl()}" alt=""
-								class="img-d img-fluid">
-						</div>
-						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
-								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										<a href="${inmobiliarias.getUrl()}" class="link-two">${inmobiliarias.getNombre()}<br>
-										</a>
-									</h3>
-								</div>
+				<c:forEach var="inmobiliarias" items="${inmobiliarias}">
+					<div class="col-md-4">
+
+						<div class="card-box-d">
+							<div class="card-img-d">
+								<img src="${inmobiliarias.getLogoUrl()}" alt=""
+									class="img-d img-fluid">
 							</div>
-							<div class="card-body-d">
-								<p class="content-d text-white">${inmobiliarias.getDomicilio().getDireccion()}</p>
-								<div class="info-agents color-a">
-									<p class="text-white">
-										<strong>Teléfono: </strong>${inmobiliarias.getTelefono()}
-									</p>
+							<div class="card-overlay card-overlay-hover">
+								<div class="card-header-d">
+									<div class="card-title-d align-self-center">
+										<h3 class="title-d">
+											<a href="${inmobiliarias.getUrl()}" class="link-two">${inmobiliarias.getNombre()}<br>
+											</a>
+										</h3>
+									</div>
+								</div>
+								<div class="card-body-d">
+									<p class="content-d text-white">${inmobiliarias.getDomicilio().getDireccion()}</p>
+									<div class="info-agents color-a">
+										<p class="text-white">
+											<strong>Teléfono: </strong>${inmobiliarias.getTelefono()}
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-</c:forEach>
+				</c:forEach>
 			</div>
 		</div>
 	</section>

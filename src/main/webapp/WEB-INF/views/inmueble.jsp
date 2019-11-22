@@ -241,7 +241,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-lg-4">
-							<img src="/resources/theme1/img/agent-4.jpg" alt=""
+							<img src="/terrapp/resources/theme1/img/agent-4.jpg" alt=""
 								class="img-fluid">
 						</div>
 						<div class="col-md-6 col-lg-4">

@@ -102,7 +102,8 @@
 				<div class="col-md-12 section-t8">
 					<div class="row">
 						<div class="col-md-6 col-lg-5">
-							<img src="/terrapp/resources/theme1/img/terrapp.jpg" alt="" class="img-fluid">
+							<img src="/terrapp/resources/theme1/img/terrapp.jpg" alt=""
+								class="img-fluid">
 						</div>
 						<div class="col-lg-2  d-none d-lg-block">
 							<div class="title-vertical d-flex justify-content-start">
@@ -117,12 +118,11 @@
 										class="color-d">y</span> <br> valores.
 								</h3>
 							</div>
-							<p class="color-text-a">Valoramos el trabajo en
-								equipo y la colaboración entre las diferentes disciplinas para
-								mejorar en lo que hacemos. nuestro Equipo de profesionales
-								inmobiliarios están comprimetidos con la orgaizacion y siguen
-								los siguientes valores:
-								</p>
+							<p class="color-text-a">Valoramos el trabajo en equipo y la
+								colaboración entre las diferentes disciplinas para mejorar en lo
+								que hacemos. nuestro Equipo de profesionales inmobiliarios están
+								comprimetidos con la orgaizacion y siguen los siguientes
+								valores:</p>
 							<ul>
 								<li>Calidad: entregamos siempre lo mejor y buscamos superar
 									expectativas</li>
@@ -157,149 +157,110 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
+			<div id="property-carousel" class="owl-carousel owl-theme">
+				<div class="carousel-item-b">
 					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="/terrapp/resources/theme1/img/agent-7.jpg" alt="" class="img-d img-fluid">
+						<div class="img-box-d">
+							<img src="/terrapp/resources/theme1/img/cesar.jpeg" alt=""
+								class="img-d img-fluid">
 						</div>
+
 						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
+							<div class="card-overlay-a-content">
 								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-									Margaret Sotillo <br> Escala
+									<h3 class="title-d text-white">
+										César Alfonso <br> Salazar Araujo
 									</h3>
 								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
+								<div class="card-body-d">
+									<p class="content-d text-white">
+										Licencia en Tecnologías <br> de la Información.
 									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
-								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
-									</ul>
+									<div class="info-agents color-a">
+										<p class="text-white">
+											<strong>Correo Electrónico: </strong> cssalazar77@gmail.com
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="carousel-item-b">
 					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="/terrapp/resources/theme1/img/agent-6.jpg" alt="" class="img-d img-fluid">
+						<div class="img-box-d">
+							<img src="/terrapp/resources/theme1/img/alex.jpeg" alt=""
+								class="img-d img-fluid">
 						</div>
+
 						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
+							<div class="card-overlay-a-content">
 								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-									Stiven Spilver <br> Darw
+									<h3 class="title-d text-white">
+										Alfonso Alejandro <br> Ortega Reyes
 									</h3>
 								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
-								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
-									</ul>
+								<div class="card-body-d">
+									<p class="content-d text-white">Licenciado en Psicología.</p>
+									<div class="info-agents color-a">
+										<p class="text-white">
+											<strong>Correo Electrónico: </strong>
+											psic.alexreyes@gmail.com
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="carousel-item-b">
 					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="/terrapp/resources/theme1/img/agent-5.jpg" alt="" class="img-d img-fluid">
+						<div class="img-box-d">
+							<img src="/terrapp/resources/theme1/img/vite.jpeg" alt=""
+								class="img-a">
 						</div>
+
 						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
+							<div class="card-overlay-a-content">
 								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										Emma Toledo <br>Cascada
+									<h3 class="title-d text-white">
+										Roberto Paulo <br> Vite Ruiz
 									</h3>
 								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
+								<div class="card-body-d">
+									<p class="content-d text-white">Ingeniero en Mecatrónica.</p>
+									<div class="info-agents color-a">
+										<p class="text-white">
+											<strong>Correo Electrónico: </strong>
+											robertoviteruiz@gmail.com
+										</p>
+									</div>
 								</div>
 							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
-									</ul>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item-b">
+					<div class="card-box-d">
+						<div class="img-box-d">
+							<img src="/terrapp/resources/theme1/img/emmanuel.jpeg" alt=""
+								class="img-a">
+						</div>
+						<div class="card-overlay card-overlay-hover">
+							<div class="card-overlay-a-content">
+								<div class="card-title-d align-self-center">
+									<h3 class="title-d text-white">
+										Emmanuel <br> Zurita Zaragoza
+									</h3>
+								</div>
+								<div class="card-body-d">
+									<p class="content-d text-white">Ingeniero en Electrónica.</p>
+									<div class="info-agents color-a">
+										<p class="text-white">
+											<strong>Correo Electrónico: </strong><br>
+											zuryita92@gmail.com
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
